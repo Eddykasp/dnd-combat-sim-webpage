@@ -4,7 +4,8 @@
   "description": "Web interface for simulating dnd encounters and statistical analysis.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify index.js -o bundle.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/Eddykasp/dnd-combat-sim-webpage/issues"
   },
-  "homepage": "https://github.com/Eddykasp/dnd-combat-sim-webpage#readme"
+  "homepage": "https://github.com/Eddykasp/dnd-combat-sim-webpage#readme",
+  "dependencies": {
+    "dnd-combat-simulator": "0.1.0",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {}
 }

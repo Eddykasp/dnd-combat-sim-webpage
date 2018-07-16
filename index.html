@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+          <div id="character_creation">
+            Character Creator
+            <form id="character_form">
+              Party:<br>
+              <input type="text" name="party_id"><br>
+              Name:<br>
+              <input type="text" name="char_id"><br>
+              HP:<br>
+              <input type="number" name="hp"><br>
+              AC:<br>
+              <input type="number" name="ac"><br>
+              Initiative:<br>
+              <input type="number" name="initiative"><br>
+              Attack Bonus:<br>
+              <input type="number" name="atk"><br>
+              Damage Dice:<br>
+              <input type="number" name="dmg"><br>
+              Number of Damage Dice:<br>
+              <input type="number" name="dmg_dice"><br>
+              Damage Bonus:<br>
+              <input type="number" name="dmg_bonus"><br>
+
+              <input type="submit">
+            </form>
+          </div>
+        </td>
+        <td>
+          <div id="character_list">
+            Characters
+            <table id="char_table">
+
+            </table>
+          </div>
+        </td>
+        <td>
+          <div id="simulation_results">
+            Simulation
+            <button type="button" id="run_simulation"></button>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <script src="bundle.js"></script>
+  </body>
+</html>
